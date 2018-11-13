@@ -1,0 +1,11 @@
+<h1>INDEX PAGE</h1>
+
+<h3>Tasks list below:</h3>
+
+
+<% @tasks.each do |task|%>
+<p><%= link_to "#{task.id} #{task.title}", task_path(task)%> <%= link_to "Edit", edit_task_path(task)%> <%= link_to "Remove task", task_path(task.id), method: :delete%></p>
+<!-- When the method is anything else that a GET, the method has to be specified -->
+<% end %>
+
+<%= link_to "+ Add a new task", new_task_path%>

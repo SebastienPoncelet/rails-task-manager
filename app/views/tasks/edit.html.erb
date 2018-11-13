@@ -1,0 +1,13 @@
+<h1>EDIT TASK PAGE</h1>
+
+<h3>Enter information in the form below:</h3>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.submit %>
+<% end %>

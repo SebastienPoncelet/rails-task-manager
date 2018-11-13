@@ -1,0 +1,7 @@
+<h1>SHOW PAGE</h1>
+
+<h3>Specific task selected below:</h3>
+
+<p><%= "Title: #{@task.title} - Details: #{@task.details} - Completed: #{@task.completed}" %></p>
+
+<%= link_to "Back to list", tasks_path%>
